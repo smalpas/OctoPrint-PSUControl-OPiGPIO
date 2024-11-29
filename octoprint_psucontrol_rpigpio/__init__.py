@@ -15,7 +15,7 @@ class PSUControl_RPiGPIO(octoprint.plugin.StartupPlugin,
     def __init__(self):
         try:
             global GPIO
-            import RPi.GPIO as GPIO
+            import OPi.GPIO as GPIO
             self._hasGPIO = True
         except (ImportError, RuntimeError):
             self._hasGPIO = False
